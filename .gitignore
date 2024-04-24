@@ -1,5 +1,8 @@
 # Using https://github.com/github/gitignore/blob/master/Python.gitignore
 
+#vscode
+.vscode/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

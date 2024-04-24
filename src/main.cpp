@@ -1,11 +1,21 @@
+
 #include <pybind11/pybind11.h>
 
 #define STRINGIFY(x) #x
 #define MACRO_STRINGIFY(x) STRINGIFY(x)
 
+#include <iostream>
+
 int add(int i, int j)
 {
     return i + j;
+}
+
+int main()
+{
+    std::cout << "Hello, World!" << std::endl;
+    std::cout << "The answer is " << add(1, 2) << std::endl;
+    return 0;
 }
 
 namespace py = pybind11;
